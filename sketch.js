@@ -65,7 +65,7 @@ function draw() {
       cells[i].angle -= 180;
     }
     
-    fill(255 - cells[i].v * 50,255,255);
+    fill(255 - abs(cells[i].v) * 50,255,255);
     if(cells[i].r >= 18){
       strokeWeight(pow(cells[i].r/18,4));
       stroke(255 / 4 * (4 - (22 - cells[i].r)), 0, 0);
